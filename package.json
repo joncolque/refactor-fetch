@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:integration:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:integration": "npx start-server-and-test dev http://localhost:3000 cy:run"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -19,5 +22,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "cypress": "^12.6.0"
   }
 }
